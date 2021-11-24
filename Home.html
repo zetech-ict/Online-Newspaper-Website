@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+     <title>The Daily Newspaper</title>
+     <link rel = "stylesheet" herf = "style.css">
+     <link herf = "https://fonts.googleapis.com/css?family=Open+Sens|Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+      font-family: 'Open Sans', sans-serif;
+      width: 100%;
+      margin: auto;
+}
+.h1{
+    display: block;
+    height: 100px;
+    border: 0;
+    border-top: 2px solid black;
+    padding: 0;
+}
+.news-link{
+    margin-top: 20px;
+    background-color: cadetblue;
+    color: black;
+    text-align: center;
+    width: 20%;
+    padding: 1px;
+    margin-left: 10px;
+}
+h1{
+    font-size: 200px;
+    font-weight: 30;
+    text-align: center;
+    margin: 0;
+}
+.ad{
+    font-size: 30px;
+    text-align: justify;
+    text-decoration-line: underline;
+    letter-spacing: 1px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: black;
+    color:white;
+    width: 90%;
+    margin: auto;
+}
+span{
+    color:rgba(68, 0, 255, 0.301);
+    font-family: 'Roboto slab', serif;
+    font-weight: 900;
+}
+.date{
+    float: left;
+    font-weight: 400;
+    margin-top: 19px;
+    font-size: 18px;
+}
+.edition{
+    float: right;
+    font-weight: 1000;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.h2{
+    margin-top: 40px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid gray;
+    padding: 0;
+}
+table{
+  table-layout: auto;
+}
+.container-1{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas: 
+   'p1 break image-1'
+   'p1 break image-1'
+   'p1 break image-1';
+}
+.container.jumbotron{
+  grid-area: image-1;
+  min-height: 400px;
+  min-width: 900px;
+  background-color: grey;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.break{
+  grid-area: break;
+  border-color: black;
+  height: 550px;
+}
+.p1 h4{
+  text-combine-upright: block;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.container-2{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas: 
+  'break-aid caption';
+}
+.break-aid{
+   grid-area: break-aid;
+   margin-left: 407px;
+   border-color: black;
+}
+.caption-2{
+  margin-top: 10px;
+  margin-left: 525px;
+}
+.container-3{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas: 
+   'p2 break-2 image-2 p3'
+   'p2 break-2 image-2 p3'
+   'p2 break-2 image-2 p3';
+}
+.break-2{
+  grid-area: break;
+  border-color: black;
+  height:480px;
+  margin-left: 2px;
+  height: 500px;
+}
+.image-2{
+  margin-top: 20px;
+  grid-area: image-2;
+  min-height: 400px;
+  min-width: 400px;
+  background-color: gray;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: center;
+  margin-left: 20px;
+}
+.p2 h4{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.p3 h4{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.hr3{
+  margin-top: 20px;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  padding: 0;
+}
+.page-no{
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 5%;
+  padding: 3px;
+  margin-left: 1300px;
+}
+
+
+
+
+
+  </style>
+  <body>
+        <header>
+                <div class="news-link">
+                       <p>thedailynewspaper.news.com</p>
+                </div>
+                <hr class="h1">
+                <h1><span>DAILY</span>PAPER</h1>
+                <p class="ad">Welcome to the Daily newspaper where we give you the very best </p>
+                <h2 class="date">November, 1st 2021</h2>
+                <h2 class="edition">Edition: 422412</h2>              
+                 <hr class="h2">
+        </header>
+          <h2>
+            <br>
+    <table>
+
+      <nav>
+        <div class="navbar-collapse"></div>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button><a class="nav-link" href="Home.html" id="nav-Home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</a></button>
+          <button><a class="nav-link" href="index.html" id="nav-index-tab" data-bs-toggle="tab" data-bs-target="#nav-index" type="button" role="tab" aria-controls="nav-index" aria-selected="true">index</a></button>
+          <button><a class="nav-link" href="Entertainment.html" id="nav-Entrtainment-tab" data-bs-toggle="tab" data-bs-target="#nav-entertainment" type="button" role="tab" aria-controls="nav-Entertainment" aria-selected="true">Entertainment</a></button>
+          <button><a class="nav-link" href="Lifestyle.html" id="nav-Lifestyle-tab" data-bs-toggle="tab" data-bs-target="#nav-Lifestyle" type="button" role="tab" aria-controls="nav-Lifestyle" aria-selected="true">Lifestyle</a></button>
+          <button><a class="nav-link" href="Latest news.html" id="nav-Latest news-tab" data-bs-toggle="tab" data-bs-target="#nav-Latest news" type="button" role="tab" aria-controls="nav-Latest news" aria-selected="true">Latest news</a></button>
+          <button><a class="nav-link" href="Sports.html" id="nav-Sports-tab" data-bs-toggle="tab" data-bs-target="#nav-Sports" type="button" role="tab" aria-controls="nav-Sports" aria-selected="true">Sports</a></button>
+          <button><a class="nav-link" href="Contact us.html" id="nav-Contact us-tab" data-bs-toggle="tab" data-bs-target="#nav-Contact us" type="button" role="tab" aria-controls="nav-Contact us" aria-selected="true">Contact us</a></button>
+          <button><a class="nav-link" href="Log Out.html" id="nav-Log Out-tab" data-bs-toggle="tab" data-bs-target="#nav-Log Out" type="button" role="tab" aria-controls="nav-Log Out" aria-selected="true">Log Out</a></button>
+        </div>
+      </nav>
+       </table>
+          </h2>
+          <section class="container-1">
+            <hr class="break">
+               <div class="p1">
+                       <h4>Lorem, ipsuum.</h4>
+                       <p>Ruto's UDA wants CJ koome out of pools team</p>
+                       <link href="https://nation.africa/kenya/news/politics/uda-wants-cj-koome-out-of-polls-team-3630152">
+            </div>
+               <div class="p1">
+              <h4>Lorem, ipsuum.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+          </div>
+                <div class="p1">
+            <h4>Lorem, ipsuum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+          </div>
+
+          <div class= "container jumbotron">
+            <img src= "./images/koome.jpg"></div>
+    </section>
+
+    <section class="container-2">
+      <hr class="break-aid">
+      <p class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus veritatis, hic eos doloremque voluptatibus illum possimus quisquam, obcaecati architecto consectetur recusandae maiores natus perspiciatis ab! Nisi possimus ipsam dolorum nihil.</p>
+    </section>
+
+    <section class="container-3">
+      <hr class="break-2">
+      <div class="p2">
+        <h4>Lorem, ipsuum.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+</div>
+         <div class="p2">
+           <h4>Lorem, ipsuum.</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+</div>
+          <div class="p2">
+             <h4>Lorem, ipsuum.</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+</div>
+
+           <div class="image-2"></div>
+           <div class="p3">
+            <h4>Lorem, ipsuum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+    </div>
+             <div class="p3">
+               <h4>Lorem, ipsuum.</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+    </div>
+              <div class="p3">
+                 <h4>Lorem, ipsuum.</h4>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius adipisci in tempore provident. Atque quis molestias reprehenderit distinctio doloremque animi harum consequuntur, earum voluptatem? Suscipit ducimus excepturi doloremque vero!</p>
+    </div>
+  </section>
+        <hr class="hr3">
+        <div class="page-no">
+          <p>1</p>
+        </div>
+
+
+
+  </body>
+
+  <br> &copy;2021 All rights reserved <a href="./Home.html">&trade; Hellen Mungai</a></p><br>
+</html>
